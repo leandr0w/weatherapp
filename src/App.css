@@ -1,0 +1,78 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('/images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(194, 189, 189, 0.5);
+    padding: 20px;
+    padding: 30px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.card__title {
+    text-align: center;
+    font-size: 2.4rem;
+    grid-column: span 2;
+    font-weight: 700;
+}
+.card__subtitle {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 200px;
+    grid-column: span 2;
+}
+.card__footer {
+    grid-column: span 2;
+}
+.card__temp {
+    text-align: center;
+    grid-column: span 2;
+    font-size: 1.5rem;
+}
+.card__info {
+    display: grid;
+    gap: 10px;
+}
+.card__description {
+    margin-top: 25px;
+    padding-left: 10px;
+    font-size: 1.3rem;
+}
+.card__footer {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.card__list {
+    display: grid;
+    gap: 5px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    font-size: 1.04rem;
+}
+.card__btn {
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(148, 141, 141, 0.5);
+    box-shadow: 1px 1px 5px;
+    transition: transform 50ms ease;
+}
+.card__btn:hover {
+    transform: scale(1.02);
+}
+.card__btn:active {
+    transform: scale(0.98);
+    box-shadow: 1px 1px 3px;
+}
